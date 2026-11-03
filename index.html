@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Today's Top 10 — 10 News. 10 Minutes. Better Informed.</title>
+<style>
+:root{--ink:#172033;--muted:#657084;--paper:#f5f7fa;--card:#fff;--navy:#101827;--blue:#2563eb;--line:#e5e9f0;--gold:#f4b740}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit}.topbar{background:var(--navy);color:#fff}.top-inner{max-width:1120px;margin:auto;padding:13px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px;font-size:13px;color:#cbd5e1}.brand{max-width:1120px;margin:auto;padding:28px 22px 25px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brandname{font-weight:900;font-size:clamp(25px,4vw,38px);letter-spacing:-1.5px;line-height:1.05}.brandname span{color:var(--gold)}.tagline{margin-top:7px;color:#cbd5e1;font-size:13px;letter-spacing:.2px}.brandmark{width:48px;height:48px;border:2px solid var(--gold);border-radius:14px;display:grid;place-items:center;font-size:23px;margin-right:12px}.brandleft{display:flex;align-items:center}.nav{border-top:1px solid #293447;background:#152136}.navinner{max-width:1120px;margin:auto;padding:0 22px;display:flex;gap:22px;overflow:auto;white-space:nowrap}.nav a{color:#dbe4f1;text-decoration:none;font-size:13px;padding:13px 0;display:block}.nav a:hover{color:var(--gold)}
+main{max-width:1120px;margin:34px auto;padding:0 22px}.intro{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.7px;color:var(--blue);font-weight:800}.intro h1{font-size:clamp(28px,5vw,43px);letter-spacing:-1.6px;line-height:1.1;margin:7px 0}.intro p{margin:8px 0 0;color:var(--muted);max-width:620px}.datebox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 15px;color:var(--muted);font-size:12px;min-width:145px}.datebox strong{display:block;color:var(--ink);font-size:14px}
+.notice{display:flex;gap:12px;align-items:flex-start;padding:15px 17px;border:1px solid #f2dfb2;background:#fff9e9;border-radius:12px;margin:24px 0;color:#6b5524;font-size:13px}.notice b{color:#493813}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:25px 0 14px}.toolbar h2{margin:0;font-size:19px;letter-spacing:-.4px}.count{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.story{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:19px;display:flex;gap:15px;min-height:185px;box-shadow:0 3px 12px #17203308}.rank{flex:0 0 38px;height:38px;border-radius:11px;background:#eef3ff;color:var(--blue);font-weight:850;display:grid;place-items:center;font-size:15px}.storybody{min-width:0}.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.55px;font-weight:750}.pill{background:#eef2f7;color:#475569;border-radius:30px;padding:4px 8px}.story h3{font-size:17px;line-height:1.3;letter-spacing:-.35px;margin:10px 0 7px}.story p{font-size:13px;color:#596579;margin:0 0 10px}.impact{font-size:12px;color:#334155;border-left:3px solid var(--gold);padding-left:9px;margin:10px 0}.source{font-size:11px;color:var(--blue);text-decoration:none;font-weight:750}.empty{grid-column:1/-1;text-align:center;padding:50px 22px;background:#fff;border:1px dashed #cbd5e1;border-radius:16px}.empty .icon{font-size:30px}.empty h3{margin:9px 0 5px}.empty p{margin:0 auto;max-width:490px;color:var(--muted);font-size:13px}.bottom{margin-top:35px;background:#eaf0f7;border-radius:16px;padding:23px;display:flex;justify-content:space-between;align-items:center;gap:18px}.bottom h3{margin:0 0 4px;font-size:17px}.bottom p{margin:0;color:var(--muted);font-size:13px}.btn{border:0;background:var(--blue);color:white;border-radius:9px;padding:11px 15px;font-weight:750;cursor:pointer;font-size:13px}.btn.secondary{background:#e9eef6;color:#273449;border:1px solid #d6deea}.footer{max-width:1120px;margin:25px auto 0;padding:20px 22px 35px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line)}.footer strong{color:var(--ink)}
+.admin{display:none;position:fixed;inset:0;background:#0b1220aa;z-index:5;padding:18px;overflow:auto}.panel{background:#fff;border-radius:16px;max-width:620px;margin:30px auto;padding:24px;box-shadow:0 20px 80px #0004}.panelhead{display:flex;justify-content:space-between;align-items:center}.panel h2{margin:0}.close{border:0;background:#eef2f7;border-radius:8px;padding:7px 11px;cursor:pointer}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:750;color:#475569}.field input,.field textarea,.field select{width:100%;padding:10px;border:1px solid #d6deea;border-radius:8px;font:inherit;font-size:13px}.field textarea{min-height:85px;resize:vertical}.formactions{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:10px}.smallnote{font-size:11px;color:var(--muted)}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.intro{align-items:flex-start;flex-direction:column}.datebox{width:100%}.bottom{align-items:flex-start;flex-direction:column}.brand{padding-top:22px}.story{min-height:0}.footer{flex-direction:column}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="top-inner"><span>YOUR DAILY BRIEFING</span><span>Clear news. Useful context. No noise.</span></div>
+  <div class="brand">
+    <div class="brandleft"><div class="brandmark">⑩</div><div><div class="brandname">TODAY'S <span>TOP 10</span></div><div class="tagline">10 News. 10 Minutes. Better Informed.</div></div></div>
+    <button class="btn secondary" onclick="openAdmin()">Editor access</button>
+  </div>
+  <div class="nav"><nav class="navinner"><a href="#top10">TODAY'S TOP 10</a><a href="#how">WHY IT MATTERS</a><a href="#about">ABOUT</a></nav></div>
+</header>
+<main>
+  <section class="intro" id="top10">
+    <div><div class="eyebrow">The daily essential briefing</div><h1>What matters today.</h1><p>Ten important developments that could affect your money, work, safety, health or future — explained in simple language.</p></div>
+    <div class="datebox"><strong id="todayDate">Today's edition</strong><span>India Standard Time · IST</span></div>
+  </section>
+  <div class="notice"><span>✦</span><div><b>Our promise</b><br>Only useful, verified updates. We prioritise public impact over noise, rumours and sensational headlines. Every story should explain what happened and why an ordinary person should care.</div></div>
+  <div class="toolbar"><h2>Today's 10 important updates</h2><span class="count" id="count">Edition not yet published</span></div>
+  <section class="grid" id="stories">
+    <div class="empty"><div class="icon">📰</div><h3>Today's edition is being prepared</h3><p>There are no stories published in this preview yet. The editor can add up to ten verified updates using “Editor access”. We won't fill the page with unverified or made-up headlines.</p></div>
+  </section>
+  <section class="bottom" id="how"><div><h3>News that respects your time.</h3><p>Each update is designed to answer: What happened? Why should I care? What could happen next?</p></div><button class="btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top ↑</button></section>
+</main>
+<footer class="footer" id="about"><div><strong>TODAY'S TOP 10</strong><br>10 News. 10 Minutes. Better Informed.</div><div>Independent daily briefing · India-focused, globally aware<br><span>Sources should be credited on every published story.</span></div></footer>
+
+<div class="admin" id="admin">
+ <div class="panel">
+  <div class="panelhead"><div><div class="eyebrow">Local preview editor</div><h2>Manage today's Top 10</h2></div><button class="close" onclick="closeAdmin()">✕</button></div>
+  <p class="smallnote">Add verified stories with a source link. Entries are saved only in this browser on this device; this preview is not connected to a live publishing server.</p>
+  <form id="storyForm">
+   <div class="formgrid">
+    <div class="field full"><label for="title">Headline *</label><input id="title" maxlength="120" required placeholder="Write a clear, factual headline"></div>
+    <div class="field"><label for="category">Area *</label><select id="category"><option>India</option><option>World</option><option>Money & Economy</option><option>Safety & Security</option><option>Jobs & Education</option><option>Technology</option><option>Health</option><option>Weather & Environment</option><option>Sports</option><option>Society & Lifestyle</option></select></div>
+    <div class="field"><label for="region">Country / location</label><input id="region" maxlength="60" placeholder="e.g. India / Maharashtra"></div>
+    <div class="field full"><label for="summary">What happened? *</label><textarea id="summary" maxlength="500" required placeholder="Explain the development in simple language (2–4 sentences)."></textarea></div>
+    <div class="field full"><label for="impact">Why should people care?</label><input id="impact" maxlength="220" placeholder="Explain the possible effect on everyday life."></div>
+    <div class="field full"><label for="source">Original source link *</label><input id="source" type="url" required placeholder="https://..."></div>
+   </div>
+   <div class="formactions"><span class="smallnote" id="formStatus">Maximum 10 stories per edition.</span><button class="btn" type="submit">Add story</button></div>
+  </form>
+  <div style="display:flex;justify-content:space-between;gap:10px;margin-top:14px"><button class="btn secondary" onclick="exportEdition()">Export edition JSON</button><button class="btn secondary" onclick="clearEdition()">Clear today's edition</button></div>
+ </div>
+</div>
+<script>
+const KEY='todaysTop10Edition_v1';
+const $=id=>document.getElementById(id);
+function dateLabel(){return new Intl.DateTimeFormat('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'}).format(new Date())}
+$('todayDate').textContent=dateLabel();
+function getStories(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+function saveStories(items){localStorage.setItem(KEY,JSON.stringify(items))}
+function safe(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){
+ const items=getStories();$('count').textContent=items.length+' of 10 updates published';
+ if(!items.length){$('stories').innerHTML='<div class="empty"><div class="icon">📰</div><h3>Today’s edition is being prepared</h3><p>There are no stories published in this preview yet. The editor can add up to ten verified updates using “Editor access”. We won’t fill the page with unverified or made-up headlines.</p></div>';return}
+ $('stories').innerHTML=items.map((s,i)=>`<article class="story"><div class="rank">${String(i+1).padStart(2,'0')}</div><div class="storybody"><div class="meta"><span class="pill">${safe(s.category)}</span><span>${safe(s.region||'')}</span></div><h3>${safe(s.title)}</h3><p>${safe(s.summary)}</p>${s.impact?`<div class="impact"><b>Why it matters:</b> ${safe(s.impact)}</div>`:''}<a class="source" href="${safe(s.source)}" target="_blank" rel="noopener noreferrer">Read original source ↗</a></div></article>`).join('');
+}
+function openAdmin(){$('admin').style.display='block'}function closeAdmin(){$('admin').style.display='none'}
+$('storyForm').addEventListener('submit',e=>{
+ e.preventDefault();let items=getStories();if(items.length>=10){$('formStatus').textContent='This edition already has 10 stories.';return}
+ const source=$('source').value.trim();try{const u=new URL(source);if(!['http:','https:'].includes(u.protocol))throw 0}catch(e){$('formStatus').textContent='Please enter a valid http or https source link.';return}
+ items.push({title:$('title').value.trim(),category:$('category').value,region:$('region').value.trim(),summary:$('summary').value.trim(),impact:$('impact').value.trim(),source});
+ saveStories(items);e.target.reset();$('formStatus').textContent='Story added. '+items.length+' of 10 used.';render();
+});
+function clearEdition(){if(confirm('Clear all stories saved in this browser?')){saveStories([]);render();$('formStatus').textContent='Edition cleared.'}}
+function exportEdition(){const blob=new Blob([JSON.stringify({date:dateLabel(),edition:getStories()},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='todays-top-10-edition.json';a.click();URL.revokeObjectURL(a.href)}
+render();
+</script>
+</body>
+</html>
