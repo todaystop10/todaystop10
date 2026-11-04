@@ -80,6 +80,21 @@ $('storyForm').addEventListener('submit',e=>{
 function clearEdition(){if(confirm('Clear all stories saved in this browser?')){saveStories([]);render();$('formStatus').textContent='Edition cleared.'}}
 function exportEdition(){const blob=new Blob([JSON.stringify({date:dateLabel(),edition:getStories()},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='todays-top-10-edition.json';a.click();URL.revokeObjectURL(a.href)}
 render();
-</script>
+</script> <section style="margin:30px auto;padding:25px;max-width:1100px;background:#edf4ff;border-radius:15px;color:#172033">
+<h2>🇮🇳 India First. People First.</h2>
+
+<p>Our promise: News that matters to ordinary Indians.</p>
+
+<ul>
+<li>Indian news platforms and official Indian sources first.</li>
+<li>Priority to inflation, jobs, education and household expenses.</li>
+<li>Health, safety, farming and public services matter.</li>
+<li>International news only when it affects India.</li>
+<li>No rumours, clickbait or sensationalism.</li>
+<li>Every story must explain why ordinary people should care.</li>
+</ul>
+
+<p><strong>Our mission: India's news, India's perspective, people's priorities.</strong></p>
+</section>
 </body>
 </html>
